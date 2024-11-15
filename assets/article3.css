@@ -72,3 +72,96 @@ nav {
 	height: 3rem;
 	width: 3rem;
 }
+
+/* Title */
+
+#title-mobile {
+	font-family: var(--title-font-family);
+	font-size: calc(var(--root-size) * 0.95);
+	color: #3F75F2;
+	line-height: 2rem;
+	text-align: left; 
+	margin-top: 6rem;
+	font-weight: 500;
+}
+
+#title-mobile2 {
+	font-family: var(--title-font-family);
+	font-size: calc(var(--root-size) * 2.2);
+	color: var(--main-text-color);
+	line-height: 4rem;
+	text-align: left; 
+	margin-bottom: 1rem;
+	font-weight: var(--title-font-weight);
+}
+
+.title {
+	border-bottom: 1px solid #edebeb;
+}
+
+
+#author {
+	font-family: var(--title-font-family);
+	font-size: calc(var(--root-size) * 1);
+	color: #808080;
+	line-height: 1.5rem;
+	margin-top: 1rem;
+	font-weight: 350;
+	border-bottom: 1px solid #edebeb;
+	padding-bottom: 1rem;
+}
+
+/* Grid Container */
+
+.grid-container3 {
+	display: grid;
+	grid-template-rows: 1fr; 
+	grid-template-columns: 0.3fr 0.2fr 0.15fr 4fr;
+	padding-bottom: 4%;
+	padding-top: 10%;
+} 
+
+.grid-inner3 {
+	background-color: #3F75F2;
+	height: 1rem;
+	width: 1rem;
+} 
+
+.grid-inner3-a {
+	background-color: #3F75F2;
+	height: 1rem;
+	width: 0.5rem;
+} 
+
+.grid-inner3-b {
+	background-color: #3F75F2;
+	height: 1rem;
+	width: 0.3rem;
+} 
+
+.grid-inner3-c {
+	background-color: #3F75F2;
+	height: 1rem;
+	width: 0.2rem;
+} 
+
+.caption {
+	font-size: calc(var(--body-font-size)*1.1);
+	color: #808080;
+	border-bottom: 1px solid #edebeb;
+	padding-bottom: 10%;
+	line-height: 1.6rem;
+	margin-top: 0rem;
+}
+
+p {
+	margin-top: 4rem;
+	font-family: var(--body-font-family);
+	font-size: var(--body-font-size);
+	line-height: 1.5rem;
+}
+
+.highlight {
+	background-color: rgba(63, 117, 242, 0.4);
+	font-weight: 300;
+}
