@@ -77,19 +77,19 @@ nav {
 
 #title-mobile {
 	font-family: var(--title-font-family);
-	font-size: calc(var(--root-size) * 0.95);
+	font-size: calc(var(--root-size) * 0.8);
 	color: #3F75F2;
 	line-height: 2rem;
 	text-align: left; 
-	margin-top: 6rem;
+	margin-top: 5rem;
 	font-weight: 500;
 }
 
 #title-mobile2 {
 	font-family: var(--title-font-family);
-	font-size: calc(var(--root-size) * 2.2);
+	font-size: calc(var(--root-size) * 1.85);
 	color: var(--main-text-color);
-	line-height: 4rem;
+	line-height: 3rem;
 	text-align: left; 
 	margin-bottom: 1rem;
 	font-weight: var(--title-font-weight);
@@ -152,16 +152,33 @@ nav {
 	padding-bottom: 10%;
 	line-height: 1.6rem;
 	margin-top: 0rem;
+	margin-bottom: 8rem;
 }
 
 p {
 	margin-top: 4rem;
 	font-family: var(--body-font-family);
-	font-size: var(--body-font-size);
-	line-height: 1.5rem;
+	font-size: calc(var(--body-font-size)*1.14);
+	line-height: 1.8rem;
 }
 
 .highlight {
 	background-color: rgba(63, 117, 242, 0.4);
 	font-weight: 300;
+}
+
+.bluetext {
+	color: #3F75F2;
+	font-weight: 350;
+}
+
+h2 {
+	font-size: calc(var(--body-font-size)*2.1);
+	font-weight: 400;
+	margin-top: 4rem;
+	margin-bottom: -3.2rem;
+}
+
+.titleblue {
+	color: #3F75F2;
 }

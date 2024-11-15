@@ -93,7 +93,7 @@ header {
 
 #title-mobile {
 	font-family: var(--title-font-family);
-	font-size: calc(var(--root-size) * 2.2);
+	font-size: calc(var(--root-size) * 2);
 	color: var(--main-text-color);
 	line-height: 4rem;
 	text-align: center; 
@@ -118,7 +118,7 @@ header {
 	border-radius: 50%;
 	position: absolute;
 	top: 1.8rem; 
-	left: 21.5rem; 
+	left: 19.5rem; 
 	animation: moveUp 6s ease forwards;
 }
 
@@ -142,7 +142,7 @@ header {
 	border-left: 4px solid #98CD3B; 
 	margin-top: 18rem;
 	font-family: var(--title-font-family);
-	line-height: 1.6rem;
+	line-height: 1.4rem;
 }
 
 .quote {
