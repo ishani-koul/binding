@@ -1,0 +1,227 @@
+/* adobe fonts
+/* Orange   @import url("https://use.typekit.net/pqu3wpe.css");
+
+h1 {
+	font-family: 'bd-orange-variable';
+	font-size: 4rem;
+	color: orange;
+} */
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+	--root-size: 1.2rem;
+	--main-bg-color: #1F1E1E;
+	--main-text-color: #edebeb;
+	--title-font-family: 'Source Code Pro';
+	--title-font-weight: 600;
+	--title-font-style: normal;
+	--body-font-family: 'Overpass Mono';
+	--body-font-size: 1rem;
+	--body-font-weight: 200;
+	--body-font-style: normal;
+	--nav-padding: 1rem;
+	--nav-margin: 2rem;
+	--nav-height: 4px;
+}
+
+body{
+	margin-left: 1.5rem; 
+	margin-right: 1.5rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem; 
+	background-color: var(--main-bg-color);
+	color: #DADADA;
+	font-family: var(--body-font-family);
+	font-weight: var(--body-font-weight);
+} 
+
+nav {
+	display: flex;
+	position: relative;
+	top: -1rem;
+	left: -2rem;
+	width: 100vw;
+	justify-content: space-between;
+	align-items: baseline;
+	background-color: var(--main-bg-color);
+	padding-top: var(--nav-padding);
+	padding-bottom: var(--nav-padding);
+	padding-left: var(--nav-margin); 
+	padding-right: var(--nav-margin);  
+} 
+
+p {
+	margin-bottom: 5rem;
+}
+
+/*  DEFAULT: MOBILE LAYOUT */
+
+/* Navigation */
+.menu {
+	font-size: 4rem;
+	font-weight: 400;
+	line-height: 50px;
+}
+
+
+/* Grid Container */
+.grid-container {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr;
+	/* padding-bottom: 1rem;
+	padding-top: 1rem; */
+}
+
+.grid-inner {
+	background-color: #F2C93F;
+	height: 3rem;
+	width: 3rem;
+}
+
+/* Title */
+
+header {
+	text-align: center;
+}
+
+#title-mobile {
+	font-family: var(--title-font-family);
+	font-size: calc(var(--root-size) * 2.2);
+	color: var(--main-text-color);
+	line-height: 4rem;
+	text-align: center; 
+	margin-top: 7rem;
+	margin-bottom: 4rem;
+	font-weight: var(--title-font-weight);
+}
+
+#author {
+	font-family: var(--title-font-family);
+	font-size: calc(var(--root-size) * 1);
+	color: #808080;
+	line-height: 1.5rem;
+	font-weight: 350;
+}
+
+/* Green dot */
+.circle {
+	width: 50px;
+	height: 50px;
+	background-color: #98CD3B;
+	border-radius: 50%;
+	position: absolute;
+	top: 1.8rem; 
+	left: 21.5rem; 
+	animation: moveUp 6s ease forwards;
+}
+
+/* Keyframes to move the circle upwards */
+@keyframes moveUp {
+	0% {
+		transform: translateY(90vh); /* Start position */
+		width: 50px;
+		height: 50px;
+	}
+	100% {
+		transform: translateY(43.5vh); /* End position next to text */
+		width: 16px;
+		height: 16px;
+	}
+}
+
+/* Blockquote  */
+
+#blockquote1 {
+	border-left: 4px solid #98CD3B; 
+	margin-top: 18rem;
+	font-family: var(--title-font-family);
+	line-height: 1.6rem;
+}
+
+.quote {
+	margin-top: 18rem;
+	margin-left: 1rem;
+	font-family: var(--title-font-family);
+	line-height: 1.6rem;
+	margin-bottom: 0rem;
+}
+
+.quoteauthor {
+	font-family: var(--title-font-family);
+	margin-left: 1rem;
+	margin-top: 1rem;
+	font-weight: 600;
+	color: #98CD3B;
+}
+
+/* Concentric Circles */
+
+.circle-container {
+	display: grid;
+	place-items: center; 
+	width: 5rem;
+	height: 5rem;
+	position: relative;
+	margin-top: 6rem;
+	margin-bottom: 1.5rem;
+  }
+  
+.circle1 {
+	position: absolute;
+	border-radius: 50%;
+	background-color: var(--main-bg-color)
+  }
+  
+  .circlea {
+	width: 4rem;
+	height: 4rem;
+	background-color: #98CD3B;
+  }
+  
+  .circleb {
+	width: 3rem;
+	height: 3rem;
+	background-color: var(--main-bg-color)
+  }
+  
+  .circlec {
+	width: 1.7rem;
+	height: 1.7rem;
+	background-color: #98CD3B;
+  }
+
+/* Article */
+
+article {
+	font-family: var(--body-font-family);
+	font-size: var(--body-font-size);
+	line-height: 1.5rem;
+}
+
+.highlight {
+	background-color: rgba(152, 205, 59, 0.4);
+	color: var(--main-text-color);
+}
+
+#quote {
+	border-left: 4px solid #98CD3B; 
+	color: #98CD3B;
+	line-height: 1.6rem;
+	font-family: var(--title-font-family);
+	font-weight: 350;
+	padding-left: 1rem;
+	line-height: 1.6rem;
+	margin-bottom: 4rem;
+}
+
+.color {
+	color: #98CD3B;
+}
+

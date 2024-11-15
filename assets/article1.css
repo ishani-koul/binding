@@ -5,6 +5,7 @@
 	box-sizing: border-box;
 }
 
+/* Root Variables */
 :root {
 	--root-size: 1.2rem;
 	--main-bg-color: #edebeb;
@@ -71,7 +72,7 @@ nav {
 	height: 3rem;
 	width: 3rem;
 }
-	
+
 /* Title */
 
 .title-mobile {
