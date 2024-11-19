@@ -101,7 +101,7 @@ nav {
 #author {
 	font-size: calc(var(--root-size) * 1);
 	color: #808080;
-	margin-bottom: 2.5rem;
+	margin-bottom: 4rem;
 	padding-bottom: 1rem;
 	border-bottom: 1px solid #edebeb; 
 }
@@ -115,10 +115,11 @@ p{
 
 .questions{
 	font-family: 'Inclusive Sans';
-	font-size: calc(var(--root-size) * 1);
+	font-size: calc(var(--root-size) * 0.9);
 	font-style: italic;
-	margin-bottom: 5rem;
-	line-height: 1.8rem;
+	color: #CFC9C9;
+	margin-bottom: 8rem;
+	line-height: 1.6rem;
 	font-weight: 100;
 }
 
@@ -152,7 +153,7 @@ p{
 	/* color: var(--main-bg-color); */
 	color: #D1484B;
 	font-weight: 800;
-	margin-bottom: 2rem;
+	margin-bottom: 4rem;
 	margin-left: -1.5rem;
 	padding-left: 1.5rem;
 	padding-top: 1rem;
