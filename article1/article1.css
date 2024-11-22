@@ -33,6 +33,7 @@ nav {
 
 /*  DEFAULT: MOBILE LAYOUT */
 
+/* Title section */
 header {
 	background-color: var(--main-text-color);
 	margin-left: -1.5rem;
@@ -44,8 +45,10 @@ header {
 	padding-right: 1.5rem;
 	padding-bottom: 3rem;
 }
+
 /* Navigation */
 .menu {
+	font-family: 'Poppins';
 	font-size: 2rem;
 	font-weight: 400;
 	line-height: 2.4rem;
@@ -70,11 +73,6 @@ header {
 	color: transparent; 
 	-webkit-text-stroke: 1px #D1484B; 
 } 
-
-/* .title-mobile:hover {
-	color: transparent; 
-	-webkit-text-stroke: 1px #D1484B; 
-} */
 
 #titlepart {
 	font-family: var(--title-font-family);
@@ -109,10 +107,10 @@ header {
 #dash {
 	font-family: var(--title-font-family);
 	font-variation-settings: "wght" 800;
-	color: #C5C5C5;
-	
+	color: #C5C5C5;	
 }
 
+/* Author and Link */
 #address {
 	background-color: #D1484B;
 	color: var(--main-bg-color);
@@ -130,7 +128,7 @@ header {
 
 #author {
 	font-family: var(--title-font-family);
-	font-variation-settings: "wght" 300;
+	font-weight: 400;
 	font-size: 1.2rem;
 	color: var(--main-bg-color);
 }
@@ -139,16 +137,18 @@ header {
 	display: inline-block;
 	position: relative;
 	font-family: var(--title-font-family);
-	font-variation-settings: "wght" 300;
+	font-weight: 400;
 	font-size: 1.2rem;
 	color: var(--main-bg-color);
 	border-bottom: 1px solid #edebeb;
 }
 
 .arrow {
+	font-family: var(--body-font-family);
 	font-size: 0.9rem;
 }
 
+/* Grid design */
 .gridsquares {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -176,6 +176,7 @@ header {
 	border: none; 
 }
 
+/* Body Style */
 p{
 	margin-bottom: 2rem;
 }
@@ -192,6 +193,7 @@ p{
 	margin-bottom: 2rem;
 }
 
+/* Highlight */
 .underline {
 	font-weight: 400;
 	/* border-bottom: 2px solid #D1484B; */
@@ -211,7 +213,7 @@ p{
 	margin-bottom: 2rem;
 }
 
-
+/* Sub-title */
 .sub-title {
 	margin-top: 2rem;
 	display: inline-block;
