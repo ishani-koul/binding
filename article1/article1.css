@@ -152,28 +152,76 @@ header {
 .gridsquares {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	/* margin-left: 2rem; */
 	margin-bottom: 2rem;
 	gap: 8px; 
 	width: 20rem; 
 	height: 20rem;
 }
 
+/* Basic grid square styling */
 .grid-square {
 	background-color: transparent;
-	border: 1px solid #D1484B;
+	border: 2px solid #D1484B;
 	width: 100%;
 	height: 100%;
+	transition: background-color 1s ease-in-out;
+}
+
+/* Last items - start as transparent, and will be filled in with color */
+.grid-square.last-item {
+	background-color: transparent;
+}
+
+/* Middle item */
+.grid-square.mid {
+	background-color: transparent;
+}
+
+/* Define the animation to fill in the squares one by one */
+@keyframes fillColor {
+	0% {
+		background-color: transparent;
+	}
+	100% {
+		background-color: #D1484B; /* Red color when filled */
+	}
+}
+
+@keyframes fillColor2 {
+	0% {
+		background-color: transparent;
+	}
+	100% {
+		background-color: transparent; 
+		border-right: 50px solid #D1484B;  /* Red color when filled */
+	}
+}
+
+/* Apply the animation to last items and mid item */
+.grid-square.last-item {
+	animation: fillColor 2s ease-in-out forwards;
 }
 
 .grid-square.mid {
-	background-color: transparent; 
-	border-right: 50px solid #D1484B; 
+	animation: fillColor2 2s ease-in-out forwards;
+	animation-delay: 10s; /* This will fill after the last items */
 }
 
-.grid-square.last-item {
-	background-color: #D1484B; 
-	border: none; 
+/* Stagger the animation for each of the last-item squares */
+.grid-square:nth-child(6) {
+	animation-delay: 1s;
+}
+
+.grid-square:nth-child(7) {
+	animation-delay: 3s;
+}
+
+.grid-square:nth-child(8) {
+	animation-delay: 5s;
+}
+
+.grid-square:nth-child(9) {
+	animation-delay: 7s;
 }
 
 /* Body Style */
