@@ -12,7 +12,7 @@
 	--title-font-family: "fractul-variable", sans-serif;
 	--title-font-weight: 400;
 	--title-font-style: normal;
-	--body-font-family: "Lexend";
+	--body-font-family: "Poppins";
 	--body-font-size: 1rem;
 	--body-font-weight: 350;
 	--body-font-style: normal;
@@ -148,28 +148,28 @@ nav {
 
 /* Article 1 */
 .article1 {
-	background-color: #F5F5F5;
-	color: var(--main-text-color);
+	background-color: #1F1E1E;
+	color: var(--main-bg-color);
 	padding-top: 2rem;
 	padding-bottom: 2.5rem;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 	margin-left: -1.5rem;
 	margin-right: -1.5rem;
-	border-bottom: 1px solid #1F1E1E;
+	border-bottom: 1px solid #ffffff;
 }
 
 .article1-style h2 {
 	font-family: var(--title-font-family);
 	font-variation-settings: "wght" 300;
-	font-size: 4rem;
+	font-size: 4.2rem;
 	font-weight: 600;
 }
 
 .article1-style h3{
 	font-family: var(--body-font-family);
 	font-size: 1.4rem;
-	font-weight: 350;
+	font-weight: 300;
 }
 
 .grid-container1 {
@@ -189,23 +189,22 @@ nav {
 
 /* Article 2 */
 .article2 {
-	background-color: #F5F5F5;
-	color: var(--main-text-color);
+	background-color: #1F1E1E;
+	color: var(--main-bg-color);
 	padding-top: 2rem;
 	padding-bottom: 2.5rem;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 	margin-left: -1.5rem;
 	margin-right: -1.5rem;
-	border-bottom: 1px solid #1F1E1E;
+	border-bottom: 1px solid #ffffff;
 }
 
 .article2-style h2 {
 	font-family: var(--title-font-family);
-	font-variation-settings: "wght" 350;
+	font-variation-settings: "wght" 450;
 	font-size: 3rem;
-	line-height: 4rem;
-	font-weight: 600;
+	line-height: 3.6rem;
 }
 
 
@@ -224,21 +223,21 @@ nav {
 
 /* Article 3 */
 .article3 {
-	background-color: #F5F5F5;
-	color: var(--main-text-color);
+	background-color: #1F1E1E;
+	color: var(--main-bg-color);
 	padding-top: 2rem;
 	padding-bottom: 2.5rem;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 	margin-left: -1.5rem;
 	margin-right: -1.5rem;
-	border-bottom: 1px solid #1F1E1E;
+	border-bottom: 1px solid #ffffff;
 }
 
 .article3-style h2 {
 	font-family: var(--body-font-family);
-	font-weight: 350;
-	font-size: 1.05rem;
+	font-weight: 300;
+	font-size: 1rem;
 	margin-bottom: 0.5rem;
 }
 
@@ -246,7 +245,7 @@ nav {
 	font-family: var(--title-font-family);
 	font-size: 2.44rem;
 	line-height: 3rem;
-	font-variation-settings: "wght" 470;
+	font-variation-settings: "wght" 500;
 }
 
 .grid-container3 {
@@ -266,7 +265,7 @@ nav {
 /* Colophon */
 .colophon {
 	padding-top: 3rem;
-	padding-bottom: 5rem;
+	padding-bottom: 2rem;
 }
 
 .colophon h2{
@@ -278,7 +277,7 @@ nav {
 
 .colophon p{
 	font-family: var(--body-font-family);
-	font-size: 1.1rem;
+	font-size: 1rem;
 	font-weight: 300;
 	margin-bottom: 1.5rem;
 	line-height: 1.6rem;

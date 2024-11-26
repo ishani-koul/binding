@@ -1,14 +1,14 @@
 /* Root Variables */
 :root {
 	--root-size: 1.2rem;
-	--main-bg-color: #edebeb;
+	--main-bg-color: #ffffff;
 	--main-text-color: #1F1E1E;
-	--title-font-family: "Source Code Pro";
+	--title-font-family: "fractul-variable", sans-serif;
 	--title-font-weight: 400;
 	--title-font-style: normal;
 	--body-font-family: "Poppins";
 	--body-font-size: 1rem;
-	--body-font-weight: 350;
+	--body-font-weight: 300;
 	--body-font-style: normal;
 	--nav-padding: 1.2rem;
 	--nav-margin: 1.5rem;
@@ -25,10 +25,12 @@ body {
 	color: var(--main-text-color);
 	font-family: var(--body-font-family);
 	font-weight: var(--body-font-weight);
+	line-height: 1.6rem;
+	font-size: var(--body-font-size);
 }
 
 nav {
-	background-color: var(--main-text-color);
+	background-color: var(--main-bg-color);
 }
 
 /*  DEFAULT: MOBILE LAYOUT */
@@ -38,8 +40,8 @@ header {
 	background-color: var(--main-text-color);
 	margin-left: -1.5rem;
 	margin-right: -1.5rem;
-	margin-top: 0rem;
-	margin-bottom: 2rem;
+	margin-top: 3rem;
+	/* margin-bottom: 2rem; */
 	padding-top: 5rem;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
@@ -52,18 +54,29 @@ header {
 	font-size: 2rem;
 	font-weight: 400;
 	line-height: 2.4rem;
-	color: var(--main-bg-color);
+	color: var(--main-text-color);
 }
+
+.grid-inner2-menu {
+	background-color: #98CD3B;
+	height: 2rem;
+	width: 2rem;
+	border-radius: 50%;
+} 
 
 /* Title */
 .title-mobile{
 	font-family: var(--title-font-family);
-	margin-top: 3rem;
-	margin-bottom: 1rem;
+	font-variation-settings: "wght" 500;
+	margin-top: 5rem;
+	margin-bottom: 2rem;
+	font-size: 2.6rem;
+	color: var(--main-bg-color);
+	transition: all 0.3s ease;
 }
 
 .title-text {
-	font-size: 2.4rem;
+	text-align: center;
 	margin-bottom: 2rem;
 	font-weight: 500;
 	color: var(--main-bg-color);
@@ -71,13 +84,11 @@ header {
 
 .title-text2 {
 	color: #98CD3B;
-	font-weight: 500;
-	font-size: 3.2rem;
+	font-size: 3rem;
 	text-align: center;
-	margin-top: 3rem;
-	margin-bottom: 7rem;
+	margin-top: 3.5rem;
+	margin-bottom: 6rem;
 }
-
 
 /* Venn Diagram Style */
 .venn {
@@ -133,10 +144,12 @@ header {
 
 /* Author and Link */
 #address {
-	background-color: #98CD3B;
-	color: var(--main-bg-color);
-	margin-top: -4rem;
+	/* background-color: #D1484B; */
+	color: var(--main-text-color);
+	/* margin-top: -4rem; */
 	margin-bottom: 4rem;
+	margin-left: -1.5rem;
+	margin-right: -1.5rem;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 	padding-top: 1.5rem;
@@ -145,34 +158,37 @@ header {
 	flex-direction: row;
 	align-items:center;
 	justify-content:space-between;
+	border-top: 1px solid #1F1E1E;
+	border-bottom: 1px solid #1F1E1E;
 }
 
 #author {
 	font-family: var(--title-font-family);
-	font-weight: 400;
-	font-size: 1rem;
-	color: var(--main-text-color);
+	font-variation-settings: "wght" 400;
+	font-size: 1.2rem;
+	color: var(--main-tex-color);
 }
 
 #link {
 	display: inline-block;
 	position: relative;
 	font-family: var(--title-font-family);
-	font-weight: 400;
-	font-size: 1rem;
+	font-variation-settings: "wght" 400;
+	font-size: 1.2rem;
 	color: var(--main-text-color);
 	border-bottom: 1px solid #1F1E1E;
 }
 
 .arrow {
+	font-family: 'Poppins';
 	font-size: 0.9rem;
 }
 
-#blockquote1 {
+.questions {
 	font-family: var(--title-font-family);
-	font-weight: 400;
-	font-size: 1rem;
-	line-height: 1.4rem;
+	font-variation-settings: "wght" 400;
+	font-size: 1.1rem;
+	line-height: 1.6rem;
 	padding-left: 0.8rem;
 	padding-top: 0.4rem;
 	padding-bottom: 0.4rem;
@@ -184,7 +200,7 @@ header {
 	margin-top: 1rem;
 	margin-bottom: -0.5rem;
 	color: #98CD3B;
-	font-weight: 700;
+	font-variation-settings: "wght" 600;
 }
 
 article {
@@ -219,4 +235,8 @@ p {
 
 .color {
 	border-bottom: 3px solid #98CD3B;
+}
+
+footer {
+	margin-top: 4rem;
 }

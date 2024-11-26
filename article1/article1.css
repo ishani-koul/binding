@@ -37,7 +37,7 @@ nav {
 
 /* Title section */
 header {
-	background-color: var(--main-bg-color);
+	background-color: var(--main-text-color);
 	margin-left: -1.5rem;
 	margin-right: -1.5rem;
 	margin-top: 3rem;
@@ -72,7 +72,7 @@ header {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 	font-size: 3.6rem;
-	color: var(--main-text-color);
+	color: var(--main-bg-color);
 	transition: all 0.3s ease;
 }
 
@@ -80,7 +80,7 @@ header {
 	font-family: var(--title-font-family);
 	font-variation-settings: "wght" 600;
 	color: transparent; 
-	-webkit-text-stroke: 1.5px var(--main-text-color); 
+	-webkit-text-stroke: 1px var(--main-bg-color); 
 } 
 
 #titlepart {
@@ -93,8 +93,8 @@ header {
 }
 
 #inclusion {
-	font-variation-settings: "wght" 500;
-	color: var(--main-text-color);
+	font-variation-settings: "wght" 400;
+	color: var(--main-bg-color);
 	position: relative;
 	display: inline-block;
 }
@@ -239,7 +239,7 @@ header {
 
 /* Body Style */
 p{
-	margin-bottom: 3rem;
+	margin-bottom: 2.5rem;
 }
 
 .questions {
@@ -251,13 +251,13 @@ p{
 	padding-top: 0.4rem;
 	padding-bottom: 0.4rem;
 	border-left: 4px solid #D1484B;
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
 }
 
 /* Highlight */
 .underline {
 	font-weight: 400;
-	background-color: rgba(242, 201, 63, 0.5);
+	background-color: rgba(242, 201, 63, 0.4);
 }
 
 #blockquote {
