@@ -183,7 +183,7 @@ footer {
 }
 
 .pl:before, .pl:after {
-	background: currentColor;
+	background: #ffffff;
 	content: "";
 	display: block;
 	position: absolute;
