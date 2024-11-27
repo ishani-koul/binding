@@ -471,6 +471,8 @@ footer {
 	background-color: #3F75F2;
 	clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
 }
+}
 
-
+@media (min-width: 1300px) {
+	
 }
