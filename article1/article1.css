@@ -35,12 +35,26 @@ nav ul{
 	background-color: var(--main-bg-color);
 }
 
-.grid-innerhome-menu {
+/* .grid-innerhome-menu {
 	color: var(--main-text-color);
 	font-family: var(--title-font-family);
 	font-size: 1.5rem;
 	font-variation-settings: "wght" 500;
 	line-height: 2rem;
+} */
+
+.logo {
+	color: #1F1E1E;
+}
+
+.line1 {
+	border-bottom: 1px solid #1F1E1E;
+}
+
+.logo:hover {
+	background-color: rgba(242, 201, 63, 0.4);
+	color: #1F1E1E;
+	transform: translateY(-3px);
 }
 
 .grid-inner1-menu {
@@ -190,32 +204,28 @@ header {
 	height: 20rem;
 }
 
-/* Basic grid square styling */
 .grid-square {
 	background-color: transparent;
 	border: 2px solid #D1484B;
 	width: 100%;
 	height: 100%;
-	transition: background-color 1s ease-in-out;
+	transition: background-color 0.5s ease-in-out;
 }
 
-/* Last items - start as transparent, and will be filled in with color */
 .grid-square.last-item {
 	background-color: transparent;
 }
 
-/* Middle item */
 .grid-square.mid {
 	background-color: transparent;
 }
 
-/* Define the animation to fill in the squares one by one */
 @keyframes fillColor {
 	0% {
 		background-color: transparent;
 	}
 	100% {
-		background-color: #D1484B; /* Red color when filled */
+		background-color: #D1484B; 
 	}
 }
 
@@ -225,21 +235,19 @@ header {
 	}
 	100% {
 		background-color: transparent; 
-		border-right: 50px solid #D1484B;  /* Red color when filled */
+		border-right: 50px solid #D1484B; 
 	}
 }
 
-/* Apply the animation to last items and mid item */
 .grid-square.last-item {
 	animation: fillColor 2s ease-in-out forwards;
 }
 
 .grid-square.mid {
 	animation: fillColor2 2s ease-in-out forwards;
-	animation-delay: 10s; /* This will fill after the last items */
+	animation-delay: 10s; 
 }
 
-/* Stagger the animation for each of the last-item squares */
 .grid-square:nth-child(6) {
 	animation-delay: 1s;
 }
@@ -262,8 +270,8 @@ p{
 }
 
 p::selection {
-	background: #D1484B; /* Highlight color */
-	color: #ffffff; /* Text color */
+	background: #D1484B;
+	color: #ffffff;
 }
 
 .questions {
@@ -394,7 +402,7 @@ h4 {
 		overflow-y: auto; 
 		overflow-x: hidden;
 		/* height: calc(100vh - 6rem);  */
-		height: 85vh; 
+		height: 80vh; 
 		margin-left: 2rem;
 		margin-top: 6rem; 
 		margin-right: -0.5rem;
@@ -425,7 +433,27 @@ h4 {
 	} 
 
 	footer {
-		display: none;
+		display: flex;
+		flex-direction: row;
+		align-items:center;
+		justify-content:space-between;
+		color: var(--main-text-color);
+		background-color: #ffffff;
+		font-size: 1.1rem;
+		font-weight: 400;
+		margin-top: 0rem;
+		border-top: 1px solid #1F1E1E;
+		margin-bottom: 1rem;
+		padding-top: 1rem ;
+	}
+
+	.top {
+		background-color: #1F1E1E;
+		color: #ffffff;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		padding-left: 8px;
+		padding-right: 8px;
 	}
 }
 
@@ -486,7 +514,28 @@ h4 {
 	} 
 
 	footer {
-		display: none;
+		display: flex;
+		flex-direction: row;
+		align-items:center;
+		justify-content:space-between;
+		color: var(--main-text-color);
+		background-color: #ffffff;
+		font-size: 1.1rem;
+		font-weight: 400;
+		margin-top: 0rem;
+		margin-bottom: -1rem;
+		border-top: 1px solid #1F1E1E;
+		padding-top: 1rem ;
 	}
+
+	.top {
+		background-color: #1F1E1E;
+		color: #ffffff;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
 
 }

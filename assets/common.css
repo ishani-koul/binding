@@ -73,7 +73,7 @@ nav ul{
 
 
 /* Navigation */
-.grid-innerhome-menu {
+/* .grid-innerhome-menu {
 	font-family: var(--title-font-family);
 	font-size: 1.5rem;
 	font-variation-settings: "wght" 500;
@@ -85,6 +85,34 @@ nav ul{
 	color: #F7EABC;
 	transform: translateY(-3px);
 	text-decoration: underline #F7EABC;
+} */
+
+.logo {
+	font-family: var(--title-font-family);
+	color: #ffffff;
+	font-size: 2rem;
+	line-height: 1.5rem;
+	margin-top: 0.4rem;
+	/* margin-bottom: -0.1rem; */
+	font-variation-settings: "wght" 500;
+	-webkit-text-stroke: 0.5px var(--main-text-color); 
+}
+
+.line1 {
+	border-bottom: 1px solid #ffffff;
+}
+
+.t {
+	margin-left: -0.15rem;
+}
+
+.m {
+	margin-left: -0.15rem;
+}
+
+.logo:hover {
+	color: #f6eabc;
+	transform: translateY(-3px);
 }
 
 .grid-inner1-menu {
@@ -147,7 +175,7 @@ nav ul{
 }
 
 .text-switch {
-	display: inline-block;
+	display: block;
 	animation: textChange 8s ease-out infinite;
 }
 
@@ -334,20 +362,21 @@ nav ul{
 
 .reading1 {
 	/* text-decoration: underline #D1484B; */
-	/* border-bottom: 2px solid #D1484B; */
-	background-color: rgb(209, 72, 75, 0.3);
+	border-bottom: 2px solid #D1484B; 
+	/* background-color: rgb(209, 72, 75, 0.3); */
 	font-weight: 500;
 }
 
 .reading2 {
 	/* text-decoration: underline #D1484B; */
-	background-color: rgb(152, 205, 59, 0.3);
+	border-bottom: 2px solid #3F75F2; 
+	/* background-color: rgb(152, 205, 59, 0.3); */
 	font-weight: 500;
 }
 
 .reading3 {
 	/* text-decoration: underline #D1484B; */
-	background-color: rgb(63, 117, 242, 0.3);
+	border-bottom: 2px solid #98CD3B; 
 	font-weight: 500;
 }
 
@@ -374,28 +403,42 @@ footer {
 	margin-top: 0.5rem;
 }
 
-/* .top {
-	position: fixed;
-	bottom: 0;
-	right:0;
-	height: 2.5rem;
-	line-height: 1rem;
-	font-family: var(--title-font-family);
-	font-variation-settings: "wght" 350;
-	font-size: 2rem;
-	background: var(--main-text-color);
-	color: var(--main-bg-color);
-	border-radius: 100px;
-	margin-left: 1.5rem;
-	margin-right: 2rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-	margin-bottom: 3rem;
-	text-align: center;
-} */
+@media (min-width:420px) {
+	.that {
+		text-align: center;
+	}
 
+	#matters-text {
+		text-align: right;
+	}
+}
+
+@media (min-width:500px) {
+	.that {
+		text-align: center;
+	}
+
+	#matters-text {
+		text-align: right;
+	}
+}
+
+@media (min-width:571px) {
+
+	.text-switch {
+		display: block;
+		text-align: right;
+		animation: textChange 8s ease-out infinite;
+	}
+
+	.that {
+		text-align: center;
+	}
+
+	#matters-text {
+		text-align: right;
+	}
+}
 
 @media (min-width: 760px) {
 /* Title */
@@ -421,7 +464,8 @@ footer {
 }
 
 .that {
-	padding-left: 24rem;
+	text-align: center;
+	/* padding-left: 12rem; */
 }
 
 #matters-text {
@@ -429,7 +473,8 @@ footer {
 	font-variation-settings: "wght" 500;
 	/* new */
 	position: relative;
-	padding-left: 31rem;
+	text-align: right;
+	padding-left: 12rem;
 	overflow: hidden;
 	height: 8rem; 
 }
@@ -551,6 +596,84 @@ footer {
 	background-color: #3F75F2;
 	clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
 }
+
+.colophon p {
+	padding-left: 10rem;
+	font-size: 1.1rem;
+	line-height: 1.8rem;
+} 
+
+.colophon h2{
+	font-size: 1.8rem;
+	font-family: var(--title-font-family);
+	font-variation-settings: "wght" 470;
+	margin-bottom: 2rem;
+	margin-left: 1rem;
+	margin-top: 2rem;
+}
+}
+
+@media (min-width:770px) {
+	.that {
+		text-align: center;
+	}
+}
+
+
+@media (min-width:880px) {
+	.that {
+		text-align: center;
+		/* padding-left: 16rem; */
+	}
+
+	.colophon p {
+		padding-left: 15rem;
+		font-size: 1.1rem;
+		line-height: 1.8rem;
+	} 
+	
+}
+
+@media (min-width:900px) {
+	.that {
+		text-align: center;
+		/* padding-left: 18rem; */
+	}
+}
+
+@media (min-width:980px) {
+	.that {
+		text-align: center;
+		/* padding-left: 20rem; */
+	}
+}
+
+@media (min-width:1000px) {
+	.that {
+		text-align: center;
+		/* padding-left: 22rem; */
+	}
+
+	.colophon p {
+		padding-left: 15rem;
+		padding-right: 3rem;
+		font-size: 1.1rem;
+		line-height: 1.8rem;
+	} 
+}
+
+@media (min-width:1050px) {
+	.that {
+		text-align: center;
+		/* padding-left: 24rem; */
+	}
+}
+
+@media (min-width:1120px) {
+	.that {
+		text-align: center;
+		/* padding-left: 27rem; */
+	}
 }
 
 @media (min-width: 1300px) {
@@ -574,7 +697,8 @@ footer {
 	}
 
 	.that {
-		padding-left: 30rem;
+		text-align: center;
+		/* padding-left: 30rem; */
 	}
 	
 	#matters-text {
