@@ -74,9 +74,9 @@ nav ul{
 
 /* Navigation */
 .grid-innerhome-menu {
-	font-family: 'Poppins';
-	font-size: 2rem;
-	font-weight: 400;
+	font-family: var(--title-font-family);
+	font-size: 1.5rem;
+	font-variation-settings: "wght" 500;
 	line-height: 2rem;
 	color: #ffffff;
 }
@@ -84,6 +84,7 @@ nav ul{
 .grid-innerhome-menu:hover {
 	color: #F7EABC;
 	transform: translateY(-3px);
+	text-decoration: underline #F7EABC;
 }
 
 .grid-inner1-menu {
@@ -165,7 +166,7 @@ nav ul{
 	content: "CARES.";
 	background-color: rgba(242, 201, 63, 0.4);
 	padding-top: 0.5rem;
-	display: block;
+	display: inline-block;
 	transform: translateY(100%);
 }  
 

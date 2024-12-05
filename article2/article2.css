@@ -43,6 +43,10 @@ nav ul{
 
 .grid-innerhome-menu {
 	color: var(--main-text-color);
+	font-family: var(--title-font-family);
+	font-size: 1.5rem;
+	font-variation-settings: "wght" 500;
+	line-height: 2rem;
 }
 
 .grid-inner1-menu {
