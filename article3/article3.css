@@ -37,6 +37,7 @@ nav ul{
 
 .logo {
 	color: #1F1E1E;
+	-webkit-text-stroke: 0.5px var(--main-bg-color); 
 }
 
 .line1 {
@@ -47,6 +48,21 @@ nav ul{
 	background-color: rgba(242, 201, 63, 0.4);
 	color: #1F1E1E;
 	transform: translateY(-3px);
+}
+
+.menu-group {
+	display: flex;
+	gap: 2rem; /* Add space between the items */
+	margin-left: auto; /* Push the group to the right */
+}
+
+.grid-inner1-menu,
+.grid-inner2-menu,
+.grid-inner3-menu {
+	/* Ensure consistent alignment */
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .grid-inner1-menu {
@@ -272,6 +288,21 @@ footer {
 	37.5%, 87.5% { opacity: 1; transform: translateZ(1px) rotateZ(180deg) rotateX(-180deg) }
 }
 
+@media (min-width: 662px) {
+
+	.title-mobile{
+		font-family: var(--title-font-family);
+		font-variation-settings: "wght" 500;
+		margin-top: 4rem;
+		margin-bottom: 3rem;
+		font-size: 2rem;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		color: var(--main-bg-color);
+		transition: all 0.3s ease;
+	}
+}
+
 @media (min-width: 920px) {
 
 	/* Title section */
@@ -287,7 +318,7 @@ footer {
 	/* Grid container */
 	.grid-container-full {
 		display: grid;
-		grid-template-columns: 350px 1fr; 
+		grid-template-columns: 38vw 1fr; 
 		height: 100vh;
 		padding-bottom: -10rem; 
 	}
@@ -310,8 +341,8 @@ footer {
 	.title-mobile{
 		font-family: var(--title-font-family);
 		font-variation-settings: "wght" 500;
-		margin-top: 3rem;
-		margin-bottom: 2rem;
+		margin-top: 4rem;
+		margin-bottom: 3rem;
 		font-size: 2rem;
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
@@ -320,7 +351,7 @@ footer {
 	}
 
 	.title-text {
-		font-size: 2rem;
+		font-size: 1.8rem;
 		line-height: 2rem;
 		margin-top: 2rem;
 		margin-bottom: 2rem;
@@ -366,7 +397,7 @@ footer {
 		overflow-x: hidden;
 		/* height: calc(100vh - 6rem);  */
 		height: 80vh; 
-		margin-left: 2rem;
+		margin-left: 2.5rem;
 		margin-top: 6rem; 
 		margin-right: -0.5rem;
 		margin-bottom: -3rem;
@@ -425,7 +456,7 @@ footer {
 
 	.grid-container-full {
 		display: grid;
-		grid-template-columns: 450px 1fr; 
+		grid-template-columns: 38vw 1fr; 
 		height: 100vh; 
 		padding-bottom: 0;
 	}
@@ -457,12 +488,16 @@ footer {
 	.title-mobile{
 		font-family: var(--title-font-family);
 		font-variation-settings: "wght" 500;
-		margin-top: 3rem;
-		margin-bottom: 3rem;
+		margin-top: 4rem;
+		margin-bottom: 4.2rem;
 		font-size: 2.6rem;
 		color: var(--main-bg-color);
 		transition: all 0.3s ease;
 	}
+
+	/* .title-text {
+		margin-bottom: 1rem;
+	} */
 
 	#titlepart {
 		font-family: var(--title-font-family);
@@ -478,6 +513,11 @@ footer {
 	main {
 		width: 75ch;
 	}
+
+	.right-side {
+		margin-left: 2.5rem;
+	}
+
 
 	html, body {
 		margin-bottom: 0;

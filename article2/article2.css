@@ -43,6 +43,7 @@ nav ul{
 
 .logo {
 	color: #1F1E1E;
+	-webkit-text-stroke: 0.5px var(--main-bg-color); 
 }
 
 .line1 {
@@ -53,6 +54,20 @@ nav ul{
 	background-color: rgba(242, 201, 63, 0.4);
 	color: #1F1E1E;
 	transform: translateY(-3px);
+}
+
+.menu-group {
+	display: flex;
+	gap: 2rem; 
+	margin-left: auto; 
+}
+
+.grid-inner1-menu,
+.grid-inner2-menu,
+.grid-inner3-menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .grid-inner1-menu {
@@ -184,9 +199,7 @@ header {
 
 /* Author and Link */
 #address {
-	/* background-color: #D1484B; */
 	color: var(--main-text-color);
-	/* margin-top: -4rem; */
 	margin-bottom: 4rem;
 	margin-left: -1.5rem;
 	margin-right: -1.5rem;
@@ -253,8 +266,8 @@ p {
 }
 
 p::selection {
-	background: #98CD3B; /* Highlight color */
-	color: #ffffff; /* Text color */
+	background: #98CD3B; 
+	color: #ffffff;
 }
 
 .quote {
@@ -274,7 +287,6 @@ p::selection {
 /* Highlight */
 .highlight {
 	font-weight: 400;
-	/* border-bottom: 2px solid #D1484B; */
 	background-color: rgba(242, 201, 63, 0.5);
 }
 
@@ -301,7 +313,7 @@ footer {
 	/* Grid container */
 	.grid-container-full {
 		display: grid;
-		grid-template-columns: 350px 1fr; 
+		grid-template-columns: 38vw 1fr; 
 		height: 100vh;
 		padding-bottom: -10rem; /* See if this has to be 0 */
 	}
@@ -317,7 +329,6 @@ footer {
 		/* margin-right: 1.5rem; */
 		margin-top: -3rem;
 		padding-top: -6rem;
-		max-width: 60ch;
 	}
 
 
@@ -369,7 +380,7 @@ footer {
 		overflow-x: hidden;
 		/* height: calc(100vh - 6rem);  */
 		height: 80vh; 
-		margin-left: 2rem;
+		margin-left: 2.5rem;
 		margin-top: 6rem; 
 		margin-right: -0.5rem;
 		margin-bottom: -3rem;
@@ -427,7 +438,7 @@ footer {
 
 	.grid-container-full {
 		display: grid;
-		grid-template-columns: 450px 1fr; 
+		grid-template-columns: 38vw 1fr; 
 		height: 100vh; 
 		padding-bottom: 0;
 	}
@@ -480,6 +491,11 @@ footer {
 	main {
 		width: 75ch;
 	}
+
+	.right-side {
+		margin-left: 2.5rem;
+	}
+
 
 	html, body {
 		margin-bottom: 0;

@@ -35,16 +35,9 @@ nav ul{
 	background-color: var(--main-bg-color);
 }
 
-/* .grid-innerhome-menu {
-	color: var(--main-text-color);
-	font-family: var(--title-font-family);
-	font-size: 1.5rem;
-	font-variation-settings: "wght" 500;
-	line-height: 2rem;
-} */
-
 .logo {
 	color: #1F1E1E;
+	-webkit-text-stroke: 0.5px var(--main-bg-color); 
 }
 
 .line1 {
@@ -55,6 +48,20 @@ nav ul{
 	background-color: rgba(242, 201, 63, 0.4);
 	color: #1F1E1E;
 	transform: translateY(-3px);
+}
+
+.menu-group {
+	display: flex;
+	gap: 2rem; 
+	margin-left: auto; 
+}
+
+.grid-inner1-menu,
+.grid-inner2-menu,
+.grid-inner3-menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .grid-inner1-menu {
@@ -81,7 +88,6 @@ header {
 	margin-left: -1.5rem;
 	margin-right: -1.5rem;
 	margin-top: 3rem;
-	/* margin-bottom: 2rem; */
 	padding-top: 5rem;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
@@ -152,9 +158,7 @@ header {
 
 /* Author and Link */
 #address {
-	/* background-color: #D1484B; */
 	color: var(--main-text-color);
-	/* margin-top: -4rem; */
 	margin-bottom: 4rem;
 	margin-left: -1.5rem;
 	margin-right: -1.5rem;
@@ -313,7 +317,6 @@ p::selection {
 }
 
 h4 {
-	/* margin-top: 2rem; */
 	display: inline-block;
 	position: relative;
 	font-family: var(--title-font-family);
@@ -335,8 +338,6 @@ h4 {
 
 
 @media (min-width: 920px) {
-
-	/* Title section */
 	header {
 		display: flex;
 		flex-direction: column;
@@ -349,8 +350,7 @@ h4 {
 	/* Grid container */
 	.grid-container-full {
 		display: grid;
-		grid-template-columns: 350px 1fr; 
-		/* height: calc(100vh - 2rem);  */
+		grid-template-columns: 38vw 1fr; 
 		height: 100vh;
 		padding-bottom: 0;
 	}
@@ -363,10 +363,8 @@ h4 {
 		overflow-y: hidden; 
 		overflow-x: hidden;
 		margin-left: -1.5rem;
-		/* margin-right: 1.5rem; */
 		margin-top: -3rem;
 		padding-top: -6rem;
-		max-width: 60ch;
 	}
 
 	#titlepart {
@@ -401,9 +399,8 @@ h4 {
 		grid-column: 2;
 		overflow-y: auto; 
 		overflow-x: hidden;
-		/* height: calc(100vh - 6rem);  */
 		height: 80vh; 
-		margin-left: 2rem;
+		margin-left: 2.5rem;
 		margin-top: 6rem; 
 		margin-right: -0.5rem;
 		margin-bottom: -3rem;
@@ -412,7 +409,6 @@ h4 {
 	.opportunity {
 		padding-top: 1rem;
 		color: #9a9898;
-		/* float: right; */
 		margin-bottom: 0.5rem;
 		margin-left: 1rem;
 	}
@@ -421,9 +417,8 @@ h4 {
 		margin-right: 1.5rem;
 	}
 
-	/* Body Style */
-	p{
-	margin-bottom: 3rem;
+	p {
+		margin-bottom: 3rem;
 	}
 
 	html, body {
@@ -465,7 +460,7 @@ h4 {
 
 	.grid-container-full {
 		display: grid;
-		grid-template-columns: 450px 1fr; 
+		grid-template-columns: 38vw 1fr; 
 		height: 100vh; 
 		padding-bottom: 0;
 	}
@@ -507,6 +502,11 @@ h4 {
 		width: 75ch;
 	}
 
+	.right-side {
+		margin-left: 2.5rem;
+	}
+
+
 	html, body {
 		margin-bottom: 0;
 		padding-bottom: 0;
@@ -536,6 +536,4 @@ h4 {
 		padding-left: 8px;
 		padding-right: 8px;
 	}
-
-
 }
