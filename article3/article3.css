@@ -563,7 +563,7 @@ footer {
 
 }
 
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
 
 	.left-side {
 		grid-column: 1;
@@ -614,4 +614,4 @@ footer {
 		margin-top: 3rem;
 	}
 
-}
+} */

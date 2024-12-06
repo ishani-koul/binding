@@ -536,7 +536,7 @@ h4 {
 	}
 }
 
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
 
 	.left-side {
 		grid-column: 1;
@@ -576,4 +576,4 @@ h4 {
 	#article1 {
 		margin-top: 4rem;
 	}
-}
+} */
