@@ -1,4 +1,4 @@
-This website, designed and developed by Ishani Koul, brings together three works in the field of design:
+This website brings together three works in the field of conscious and ethical design:
   - Mismatch: How Inclusion Shaped Design by Kat Holmes
   - Design for the Real World by Victor Papanek
   - Wrote the Book on User-Friendly Design. What I See Today Horrifies Me by Don Norman
