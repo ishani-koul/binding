@@ -41,20 +41,6 @@ nav ul{
 	background-color: var(--main-bg-color);
 }
 
-.logo {
-	color: #1F1E1E;
-	-webkit-text-stroke: 0.5px var(--main-bg-color); 
-}
-
-.line1 {
-	border-bottom: 1px solid #1F1E1E;
-}
-
-.logo:hover {
-	background-color: rgba(242, 201, 63, 0.4);
-	color: #1F1E1E;
-	transform: translateY(-3px);
-}
 
 .menu-group {
 	display: flex;
@@ -68,6 +54,19 @@ nav ul{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.square-menu {
+	background-color: #1F1E1E;
+	border: 1px solid #1F1E1E;
+}
+
+.triangle-menu {
+	border-bottom: 1.94rem solid #ffffff; 
+}
+
+.circle-menu {
+	background-color: #1F1E1E; 
 }
 
 .grid-inner1-menu {
