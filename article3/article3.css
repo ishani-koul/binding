@@ -205,6 +205,19 @@ p::selection {
 	color: #ffffff; /* Text color */
 }
 
+h2 {
+	font-family: var(--title-font-family);
+	font-variation-settings: "wght" 600;
+	font-size: 2rem;
+	margin-top: 4rem;
+	padding-bottom: 0.5rem;
+	color: #1F1E1E;
+}
+
+.titleblue {
+	color: #3F75F2;
+}
+
 /* Highlight */
 .highlight {
 	font-weight: 400;
